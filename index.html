@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Etch-a-sketch</title>
+  </head>
+  <body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="container">
+      <div class="board-container"></div>
+      <div class="controls-container">
+        <div class="colors-container">
+          <div class="color-selector" id="color"></div>
+          <button class="btn active" id="btn-color">Color Mode</button>
+          <button class="btn" id="btn-rainbow">Rainbow mode</button>
+          <button class="btn" id="btn-eraser">eraser</button><button class="btn" id="btn-clear">clear</button>
+        </div>
+        <div class="grid-options">
+          <div class="slider-container">
+            <input type="range" min="16" max="64" value="16" class="slider" id="myRange" />
+            <p class="grid-description"><span id="grid-value">16</span> x <span id="grid-value">16</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Developed by <a href="https://github.com/a-adel-dev">Ahmad Adel</a> |
+      <a href="https://github.com/a-adel-dev/etch-a-sketch">Source</a>
+    </footer>
+  </body>
+</html>
