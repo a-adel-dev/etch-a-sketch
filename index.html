@@ -8,19 +8,21 @@
     <title>Etch-a-sketch</title>
   </head>
   <body>
+    <input type="color" id="color-picker" tabindex="-1" class="hidden" />
     <h1>Etch-a-Sketch</h1>
     <div class="container">
-      <div class="board-container"></div>
+      <div class="board-container" id="board"></div>
       <div class="controls-container">
         <div class="colors-container">
-          <div class="color-selector" id="color"></div>
+          <!-- <div class="color-selector" id="color"></div> -->
+          <input type="color" id="color" name="head" value="#e66465" />
           <button class="btn active" id="btn-color">Color Mode</button>
           <button class="btn" id="btn-rainbow">Rainbow mode</button>
           <button class="btn" id="btn-eraser">eraser</button><button class="btn" id="btn-clear">clear</button>
         </div>
         <div class="grid-options">
           <div class="slider-container">
-            <input type="range" min="16" max="64" value="16" class="slider" id="myRange" />
+            <input type="range" min="16" max="24" value="16" class="slider" id="grid-slider" />
             <p class="grid-description"><span id="grid-value">16</span> x <span id="grid-value">16</span></p>
           </div>
         </div>
@@ -31,5 +33,6 @@
       Developed by <a href="https://github.com/a-adel-dev">Ahmad Adel</a> |
       <a href="https://github.com/a-adel-dev/etch-a-sketch">Source</a>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

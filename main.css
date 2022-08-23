@@ -8,7 +8,7 @@
 }
 
 :root {
-    --hue : 231;
+    --hue : 200;
 
 
     --color-primary: hsl(var(--hue), 50%, 44%);
@@ -30,8 +30,8 @@ body {
 
 h1 {
     text-align: center;
-    margin: 2rem 0;
-    font-size: 3rem;
+    font-size: 5rem;
+    color: var(--color-primary-dark);
 }
 
 .btn {
@@ -74,6 +74,7 @@ h1 {
     display: grid;
     background-color: #fff;
     overflow: hidden;
+    
 }
 
 .controls-container {
@@ -163,7 +164,7 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-        overflow: hidden;
+    overflow: hidden;
 }
 
 .slider-container {
@@ -193,3 +194,21 @@ footer a {
 footer a:hover {
     color: var(--color-primary-dark);
 }
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#color {
+    width: 60px;
+    height: 60px;
+    transition: 0.3s ease-in-out;
+    border: none;
+    border-color: transparent;
+}
+
